@@ -51,7 +51,8 @@ class StepDetailRow extends StatelessWidget {
                   height: 80,
                   width: 0,
                   dashColor: PageColors.secondaryColor1,
-                  axis: Axis.vertical)
+                  axis: Axis.vertical
+              ),
           ],
         ),
         const SizedBox(
@@ -65,7 +66,7 @@ class StepDetailRow extends StatelessWidget {
               Text(
                 sObj["title"].toString(),
                 style: TextStyle(
-                  color: PageColors.black,
+                  color: PageColors.white,
                   fontSize: 14,
                 ),
               ),

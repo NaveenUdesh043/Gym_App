@@ -88,6 +88,20 @@ flutter:
     - assets/images/burn.png
     - assets/images/closed_btn.png
     - assets/images/more_btn.png
+    - assets/images/workoutTwo.jpg
+    - assets/images/Workout1.png
+    - assets/images/Workout2.png
+    - assets/images/barbell.png
+    - assets/images/bottle.png
+    - assets/images/skipping_rope.png
+    - assets/images/img_1.png
+    - assets/images/img_2.png
+    - assets/images/black_btn.png
+    - assets/images/fav.png
+    - assets/images/time.png
+    - assets/images/difficulity.png
+    - assets/images/p_next.png
+    - assets/images/next_go.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

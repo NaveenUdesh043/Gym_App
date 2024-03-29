@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gymapp_uvexzon/ProfilePages/AdminProfile.dart';
-import 'package:gymapp_uvexzon/WorkoutPages/StepPage.dart';
-import 'package:gymapp_uvexzon/signupLogin/DetailsPage.dart';
-import 'package:gymapp_uvexzon/signupLogin/WelcomePage.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/SelectWorkout.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
-import 'package:gymapp_uvexzon/viewPages/on_boards/on_boarding_pages.dart';
 
 
 void main() {
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
           primaryColor: PageColors.primaryColor1,
           fontFamily: "Poppins"
       ),
-      home: const ExercisesStepDetails(eObj: {},),
+      home: const SelectWorkout(dObj: {},),
     );
   }
 }
