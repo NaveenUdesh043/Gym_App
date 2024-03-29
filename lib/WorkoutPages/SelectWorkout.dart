@@ -215,13 +215,15 @@ class _SelectWorkoutState extends State<SelectWorkout> {
                                   style: TextStyle(
                                       color: PageColors.white,
                                       fontSize: 16,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w700
+                                  ),
                                 ),
                                 Text(
                                   "${widget.dObj["exercises"].toString()} | ${widget.dObj["time"].toString()} | 320 Calories Burn",
                                   style: TextStyle(
                                       color: PageColors.white,
-                                      fontSize: 15),
+                                      fontSize: 15
+                                  ),
                                 ),
                               ],
                             ),

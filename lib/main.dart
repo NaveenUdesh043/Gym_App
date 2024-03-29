@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gymapp_uvexzon/WorkoutPages/SelectWorkout.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/StepPage.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/WorkoutView.dart';
+import 'package:gymapp_uvexzon/signupLogin/loginpage.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
 
 
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
           primaryColor: PageColors.primaryColor1,
           fontFamily: "Poppins"
       ),
-      home: const SelectWorkout(dObj: {},),
+      home:  AddScheduleView(date: DateTime.now(),),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/WorkoutView.dart';
 import 'package:gymapp_uvexzon/signupLogin/signupPage.dart';
 
 
