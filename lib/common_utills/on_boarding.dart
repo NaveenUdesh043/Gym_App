@@ -32,7 +32,7 @@ class OnBoardingPage extends StatelessWidget {
               child: Text(
                 pObj["title"].toString(),
                 style: TextStyle(
-                    color: PageColor.white,
+                    color: PageColors.white,
                     fontSize: 24,
                     fontWeight: FontWeight.w700),
               ),
@@ -42,7 +42,7 @@ class OnBoardingPage extends StatelessWidget {
               child: Text(
                 pObj["subtitle"].toString(),
                 style: TextStyle(
-                    color: PageColor.white,
+                    color: PageColors.white,
                     fontSize: 14),
               ),
             ),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/signupLogin/loginpage.dart';
 import '../../common_utills/on_boarding.dart';
 import '../../utills/colours.dart';
 
 class OnBoardingPages extends StatefulWidget {
-  const OnBoardingPages({super.key});
+  const OnBoardingPages({Key? key}) : super(key: key);
 
   @override
   State<OnBoardingPages> createState() => _OnBoardingPagesState();
@@ -29,26 +30,27 @@ class _OnBoardingPagesState extends State<OnBoardingPages> {
       "title": "Track Your Goal",
       "subtitle":
       "Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals",
-      "image": "assets/images/gymapponboarding.jpg"
+      "image": "assets/images/onboardone.jpg"
     },
     {
       "title": "Get Burn",
       "subtitle":
-      "Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever",
-      "image": "assets/img/on_2.png"
+      "Let’s keep burning, to achieve yours goals, it hurts only temporarily, if you give up now you will be in pain forever",
+      "image": "assets/images/VectorRgScreen.png",
+      "additionalImage": "assets/images/onbardtwo.jpg",
     },
     {
       "title": "Eat Well",
       "subtitle":
       "Let's start a healthy lifestyle with us, we can determine your diet every day. healthy eating is fun",
-      "image": "assets/img/on_3.png"
+      "image": "assets/images/onboardthree.jpg"
     },
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: PageColor.black,
+      backgroundColor: PageColors.black,
       body: Stack(
         alignment: Alignment.bottomRight,
         children: [
@@ -70,7 +72,7 @@ class _OnBoardingPagesState extends State<OnBoardingPages> {
                   width: 70,
                   height: 70,
                   child: CircularProgressIndicator(
-                    color: PageColor.primaryColor1,
+                    color: PageColors.primaryColor1,
                     value: (selectPage + 1) / 4,
                     strokeWidth: 2,
                   ),
@@ -83,13 +85,13 @@ class _OnBoardingPagesState extends State<OnBoardingPages> {
                   width: 60,
                   height: 60,
                   decoration: BoxDecoration(
-                    color: PageColor.primaryColor1,
+                    color: PageColors.primaryColor1,
                     borderRadius: BorderRadius.circular(35),
                   ),
                   child: IconButton(
                     icon: Icon(
                       Icons.navigate_next,
-                      color: PageColor.black,
+                      color: PageColors.black,
                     ),
                     onPressed: () {
                       if (selectPage < 3) {
@@ -104,7 +106,7 @@ class _OnBoardingPagesState extends State<OnBoardingPages> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const OnBoardingPages(),
+                            builder: (context) => const LoginView(),
                           ),
                         );
                       }

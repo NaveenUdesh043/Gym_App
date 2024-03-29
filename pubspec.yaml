@@ -36,6 +36,13 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   intl: ^0.19.0
+  flutter_screenutil: ^5.9.0
+  google_fonts: ^6.1.0
+  flutter_datetime_picker: ^1.5.1
+  smooth_page_indicator: ^1.1.0
+  readmore: ^3.0.0
+  dotted_dashed_line: ^0.0.3
+
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +70,24 @@ flutter:
   assets:
     - assets/images/intense.png
     - assets/images/gymapponboarding.jpg
+    - assets/images/bodyBuilder.png
+    - assets/images/VectorRgScreen.png
+    - assets/images/regpagebb.png
+    - assets/images/woman.png
+    - assets/images/veggg.png
+    - assets/images/genderSelect.png
+    - assets/images/dateSelect.png
+    - assets/images/weightSelect.png
+    - assets/images/hightSelect.png
+    - assets/images/welcomepageee.jpg
+    - assets/images/SelectPage.jpg
+    - assets/images/onboardone.jpg
+    - assets/images/onbardtwo.jpg
+    - assets/images/onboardthree.jpg
+    - assets/images/workoutdetails.jpg
+    - assets/images/burn.png
+    - assets/images/closed_btn.png
+    - assets/images/more_btn.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

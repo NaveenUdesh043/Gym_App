@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gymapp_uvexzon/viewPages/on_boards/on_boarding_pages.dart';
-
 import '../../common_utills/roundBtn.dart';
 import '../../utills/colours.dart';
 
@@ -18,13 +17,13 @@ class _StartPageState extends State<StartPage> {
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: PageColor.black,
+      backgroundColor: PageColors.black,
       body: Container(
         width: media.width,
         decoration: BoxDecoration(
           gradient: isChangeColor
               ? LinearGradient(
-            colors: PageColor.primaryG,
+            colors: PageColors.primaryG,
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           )

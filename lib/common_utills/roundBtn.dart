@@ -31,7 +31,7 @@ class RoundBtnn extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: b_type == RoundBtn.bgSGradient ? PageColor.secondaryG :  PageColor.primaryG,
+            colors: b_type == RoundBtn.bgSGradient ? PageColors.secondaryG :  PageColors.primaryG,
           ),
           borderRadius: BorderRadius.circular(25),
           boxShadow: b_type == RoundBtn.bgGradient ||  b_type == RoundBtn.bgSGradient
@@ -49,23 +49,23 @@ class RoundBtnn extends StatelessWidget {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
         ),
-        textColor: PageColor.primaryColor1,
+        textColor: PageColors.primaryColor1,
         minWidth: double.maxFinite,
         elevation: b_type == RoundBtn.bgGradient ||  b_type == RoundBtn.bgSGradient ? 0 : elevation,
         color: b_type == RoundBtn.bgGradient ||  b_type == RoundBtn.bgSGradient
             ? Colors.transparent
-            : PageColor.white,
+            : PageColors.white,
         child: b_type == RoundBtn.bgGradient ||  b_type == RoundBtn.bgSGradient
             ? Text(topic,
             style: TextStyle(
-                color: PageColor.black,
+                color: PageColors.black,
                 fontSize: fontSize,
                 fontWeight: fontWeight))
             : ShaderMask(
           blendMode: BlendMode.srcIn,
           shaderCallback: (bounds) {
             return LinearGradient(
-                colors: PageColor.primaryG,
+                colors: PageColors.primaryG,
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight)
                 .createShader(
@@ -75,7 +75,7 @@ class RoundBtnn extends StatelessWidget {
           },
           child: Text(topic,
               style: TextStyle(
-                  color:  PageColor.primaryColor1,
+                  color:  PageColors.primaryColor1,
                   fontSize: fontSize,
                   fontWeight: fontWeight
               ),

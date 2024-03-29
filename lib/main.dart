@@ -1,8 +1,11 @@
-
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/ProfilePages/AdminProfile.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/StepPage.dart';
+import 'package:gymapp_uvexzon/signupLogin/DetailsPage.dart';
+import 'package:gymapp_uvexzon/signupLogin/WelcomePage.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
 import 'package:gymapp_uvexzon/viewPages/on_boards/on_boarding_pages.dart';
-import 'package:gymapp_uvexzon/viewPages/on_boards/startPage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,17 +14,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fitness 3 in 1',
+      title: 'Uvexzon',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primaryColor: PageColor.primaryColor1,
+          primaryColor: PageColors.primaryColor1,
           fontFamily: "Poppins"
       ),
-      home: OnBoardingPages(),
+      home: const ExercisesStepDetails(eObj: {},),
     );
   }
 }
