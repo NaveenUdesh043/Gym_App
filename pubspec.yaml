@@ -105,6 +105,9 @@ flutter:
     - assets/images/next_go.png
     - assets/images/difficulity.png
     - assets/images/repetitions.png
+    - assets/images/what_1.png
+    - assets/images/what_2.png
+    - assets/images/what_3.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
