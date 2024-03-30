@@ -72,7 +72,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
           )
         ],
       ),
-      backgroundColor: PageColors.white,
+      backgroundColor: PageColors.black,
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -137,7 +137,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/difficulity.png",
+              icon: "assets/images/difficulity.png",
               title: "Difficulity",
               time: "Beginner",
               color: PageColors.white,
@@ -146,7 +146,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/repetitions.png",
+              icon: "assets/images/repetitions.png",
               title: "Custom Repetitions",
               time: "",
               color: PageColors.white,
@@ -155,7 +155,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/repetitions.png",
+              icon: "assets/images/repetitions.png",
               title: "Custom Weights",
               time: "",
               color: PageColors.white,
