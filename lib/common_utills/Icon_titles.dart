@@ -48,7 +48,7 @@ class IconTitleNextRow extends StatelessWidget {
             Expanded(
               child: Text(
                 title ,
-                style: TextStyle(color: PageColors.white,
+                style: TextStyle(color: PageColors.black,
                     fontSize: 12
                 ),
               ),

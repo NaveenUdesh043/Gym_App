@@ -34,7 +34,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             width: 40,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-                color: PageColors.black,
+                color: PageColors.white,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
               "assets/images/closed_btn.png",
@@ -74,12 +74,17 @@ class _AddScheduleViewState extends State<AddScheduleView> {
       ),
       backgroundColor: PageColors.black,
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        padding: const EdgeInsets.symmetric(
+            vertical: 15,
+            horizontal: 25
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
           Row(
             children: [
               Image.asset(
                 "assets/images/dateSelect.png",
+                color: PageColors.white,
                 width: 20,
                 height: 20,
               ),
@@ -112,6 +117,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               use24hFormat: false,
               minuteInterval: 1,
               mode: CupertinoDatePickerMode.time,
+              backgroundColor: PageColors.white,
             ),
           ),
           const SizedBox(

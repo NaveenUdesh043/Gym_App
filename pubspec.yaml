@@ -42,6 +42,8 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   readmore: ^3.0.0
   dotted_dashed_line: ^0.0.3
+  fl_chart: ^0.67.0
+  animated_toggle_switch: ^0.8.2
 
 
 dev_dependencies:
@@ -108,6 +110,7 @@ flutter:
     - assets/images/what_1.png
     - assets/images/what_2.png
     - assets/images/what_3.png
+    - assets/images/paymentPage.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
