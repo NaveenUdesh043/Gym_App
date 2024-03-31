@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/ProfilePages/ProfilePage.dart';
 import 'package:gymapp_uvexzon/common_utills/roundBtn.dart';
 import 'package:gymapp_uvexzon/signupLogin/loginpage.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
@@ -62,7 +63,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const LoginView()
+                            builder: (context) => ProfilePage()
                         ),
                     );
                   }

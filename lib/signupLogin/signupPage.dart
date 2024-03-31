@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/signupLogin/DetailsPage.dart';
 import 'package:gymapp_uvexzon/signupLogin/loginpage.dart';
 
 class SignUpView extends StatefulWidget {
@@ -211,7 +212,12 @@ class _SignUpViewState extends State<SignUpView> {
                     ],
                   ),
                   child: ElevatedButton(
-                    onPressed: signUp,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailView()), // Replace NextPage with the page you want to navigate to
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFFFFD180),
                       shape: RoundedRectangleBorder(
@@ -279,3 +285,4 @@ class _SignUpViewState extends State<SignUpView> {
     );
   }
 }
+

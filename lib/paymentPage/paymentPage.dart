@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/ProfilePages/ProfilePage.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
 
 class Payment extends StatefulWidget {
@@ -130,7 +131,14 @@ class _PaymentState extends State<Payment> {
                 SizedBox(height: 20),
                 ElevatedButton(
 
-                  onPressed: () {},
+                  onPressed: () {
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()
+                      ),
+                    );
+                  },
                   child: Text('Pay Now'),
 
                 ),

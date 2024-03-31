@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/WorkoutPages/SelectWorkout.dart';
 import 'package:gymapp_uvexzon/common_utills/Icon_titles.dart';
 import 'package:gymapp_uvexzon/common_utills/roundBtn.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
@@ -165,9 +166,18 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               title: "Custom Weights",
               time: "",
               color: PageColors.white,
-              onPressed: () {}),
+              onPressed: () {
+
+              }),
           Spacer(),
-          RoundBtnn(topic: "Save", onPressed: () {}),
+          RoundBtnn(topic: "Save", onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => SelectWorkout(dObj: {},)
+              ),
+            );
+          }),
           const SizedBox(
             height: 20,
           ),

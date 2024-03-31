@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gymapp_uvexzon/ProfilePages/ProfilePage.dart';
 import 'package:gymapp_uvexzon/common_utills/Step_Details.dart';
 import 'package:gymapp_uvexzon/common_utills/roundBtn.dart';
 import 'package:gymapp_uvexzon/utills/colours.dart';
@@ -286,7 +287,14 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
               ),
               RoundBtnn(topic: "Save",
                   elevation: 0,
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ProfilePage()
+                      ),
+                    );
+                  }),
               const SizedBox(
                 height: 15,
               ),

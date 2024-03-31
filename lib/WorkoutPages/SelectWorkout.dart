@@ -390,7 +390,14 @@ class _SelectWorkoutState extends State<SelectWorkout> {
                     children: [
                       RoundBtnn(
                           topic: "Start Workout",
-                          onPressed: () {})
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ExercisesStepDetails(eObj: {},)
+                              ),
+                            );
+                          })
                     ],
                   ),
                 )
